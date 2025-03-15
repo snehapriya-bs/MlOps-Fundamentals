@@ -22,7 +22,7 @@ titanic_pipeline/
 
 ---
 
-## 📦 **Setup**
+## 📦 **Setup - When run Locally**
 ### 1. **Clone the Repository**
 ```bash
 git clone git@github.com:snehapriya-bs/MlOps-Fundamentals.git
@@ -31,10 +31,14 @@ cd MlOps-Fundamentals
 
 ### 2. **Install Dependencies**
 ```bash
-pip install -r requirements/test_requirements.txt
+python -m venv fastapi
+fastapi\Scripts\activatet
 ```
 
----
+### 3. **Install Dependencies**
+```bash
+pip install -r requirements/test_requirements.txt
+```
 
 ## 🏋️‍♀️ **Training the Model**
 Train the model using:
@@ -42,15 +46,13 @@ Train the model using:
 python titanic_model/train_pipeline.py
 ```
 
----
-
 ## 🧪 **Run Tests**
 Run unit tests:
 ```bash
 pytest tests/
 ```
 
-## ✅ **GitHub Actions**
+## ✅ **## 📦 **Setup - with GitHub Actions**
 - CI/CD is automated using GitHub Actions (`.github/workflows/main.yml`)  
 - Runs tests and checks automatically on push/pull requests  
 
