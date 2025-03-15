@@ -30,7 +30,8 @@ jobs:
       - name: Train pipeline
         run: |
           python titanic_model/train_pipeline.py
-          ls -ltr
+          ls -ltr 
+          ls -ltr titanic_model/trained_model
 
       - name: Test with pytest
         run: |
